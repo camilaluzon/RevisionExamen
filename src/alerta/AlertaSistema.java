@@ -6,7 +6,7 @@ public class AlertaSistema {
     private int prioridad;
     private static int contador=0;
 
-    public AlertaSistema(int identificador, String descripcion, int prioridad) {
+    public AlertaSistema(int identificador, String descripcion) {
         if(identificador < 0)
             identificador = 0;
         this.identificador = identificador;
