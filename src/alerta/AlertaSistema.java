@@ -1,10 +1,22 @@
 package alerta;
 
 public class AlertaSistema {
-    private int identificador;
+    private final int identificador;
     private String descripcion;
     private int prioridad;
     private static int contador=0;
+
+    /*
+
+    private int identificador;
+
+    private void setIdentificador(int identificador){
+        if(identificador < 0)
+            identificador = 0;
+        this.identificador = identificador;
+    }
+
+    */
 
     public AlertaSistema(int identificador, String descripcion) {
         if(identificador < 0)
